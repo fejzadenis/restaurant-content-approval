@@ -57,6 +57,10 @@
   .steps li.done:before { content: "●"; color: var(--ok); }
   .log { margin-top: 16px; background: #0b0d11; border: 1px solid var(--line); border-radius: 10px; padding: 12px; font: 12px/1.55 ui-monospace, SFMono-Regular, Consolas, monospace; color: #b9c4d4; max-height: 220px; overflow: auto; white-space: pre-wrap; }
   .log .ok { color: var(--ok); } .log .bad { color: var(--bad); }
+  .btn { display: inline-block; padding: 9px 14px; border-radius: 8px; background: #2c4a8f; border: 1px solid #3a5cad; color: #fff; text-decoration: none; font-size: 13.5px; }
+  .btn:hover { background: #3457a8; }
+  .btn.alt { background: #232834; border-color: var(--line); color: var(--ink); }
+  .btn.alt:hover { background: #2b3140; }
   footer { margin-top: 20px; color: var(--muted); font-size: 12.5px; border-top: 1px solid var(--line); padding-top: 14px; }
   a { color: var(--accent); }
   .note { font-size: 12.5px; color: var(--muted); margin-top: 10px; }
@@ -122,6 +126,24 @@
   </div>
 
   <div class="log" id="log">// results printed as the core returns them</div>
+
+  <div class="offer" style="margin-top:22px;border:1px solid var(--line);background:linear-gradient(180deg,#1b2130,#171a21);border-radius:12px;padding:18px">
+    <h2 style="font-size:13px;text-transform:uppercase;letter-spacing:.9px;color:var(--muted);margin:0 0 8px;font-weight:600">Put this gate in your pipeline</h2>
+    <p style="margin:0 0 14px;font-size:14px;max-width:780px">Everything above runs the same core that ships in the workflows. Two ways to have it in production this week:</p>
+    <div class="grid" style="grid-template-columns:1fr 1fr;gap:12px">
+      <div class="card" style="margin:0">
+        <div style="font-weight:600;font-size:15px;margin-bottom:5px">Installed for you &mdash; $149</div>
+        <div style="color:var(--muted);font-size:13px;margin-bottom:12px">I put it in your n8n, connect your storage (Drive, Notion or Airtable) and hand over the 20-scenario suite, passing. Three working days from your first message.</div>
+        <a class="btn" href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=dragana.karans%40gmail.com&item_name=Content%20approval%20gate%20-%20installed%20in%20your%20n8n&amount=149.00&currency_code=USD&return=https%3A%2F%2Ffejzadenis.github.io%2Frestaurant-content-approval%2Fthanks.html&cancel_return=https%3A%2F%2Ffejzadenis.github.io%2Frestaurant-content-approval%2F" rel="noopener" target="_blank">Pay $149 with PayPal</a>
+      </div>
+      <div class="card" style="margin:0">
+        <div style="font-weight:600;font-size:15px;margin-bottom:5px">The pack, self-serve &mdash; $49</div>
+        <div style="color:var(--muted);font-size:13px;margin-bottom:12px">Schema, three n8n workflows, the approval core and the 20-scenario test suite. I email the ZIP within two hours of payment.</div>
+        <a class="btn alt" href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=dragana.karans%40gmail.com&item_name=Content%20approval%20gate%20-%20workflow%20pack&amount=49.00&currency_code=USD&return=https%3A%2F%2Ffejzadenis.github.io%2Frestaurant-content-approval%2Fthanks.html&cancel_return=https%3A%2F%2Ffejzadenis.github.io%2Frestaurant-content-approval%2F" rel="noopener" target="_blank">Pay $49 with PayPal</a>
+      </div>
+    </div>
+    <p style="margin:12px 0 0;color:var(--muted);font-size:12.5px">If it does not fit your setup, PayPal refund inside 7 days, no argument. Questions go to <a href="mailto:perun.intelligence@gmail.com?subject=Content%20approval%20gate" style="color:var(--accent)">perun.intelligence@gmail.com</a> &mdash; one question, one answer, no sales call.</p>
+  </div>
 
   <footer>
     Built for agencies producing 200+ posts a month. The tested implementation (schema, three n8n workflows, 20 scenarios, 11/11 test suite) is public:

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Payment received - content approval gate</title>
+<meta name="robots" content="noindex" />
+<style>
+  :root {
+    --bg: #0f1115; --panel: #171a21; --panel2: #1e222b; --line: #2a2f3a;
+    --ink: #e8ecf3; --muted: #97a1b2; --ok: #3ecf8e; --accent: #7aa2ff;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.6 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 44px 18px 70px; }
+  h1 { font-size: 24px; margin: 0 0 8px; letter-spacing: -0.4px; }
+  .lead { color: var(--muted); margin: 0 0 22px; font-size: 14.5px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 18px; margin-bottom: 14px; }
+  .card h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.9px; color: var(--muted); margin: 0 0 10px; font-weight: 600; }
+  ol { margin: 0; padding-left: 20px; }
+  li { margin-bottom: 9px; }
+  a { color: var(--accent); }
+  code { background: #0b0d11; border: 1px solid var(--line); border-radius: 5px; padding: 1px 5px; font-size: 13px; }
+  .ok { color: var(--ok); }
+  footer { margin-top: 24px; color: var(--muted); font-size: 12.5px; border-top: 1px solid var(--line); padding-top: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Payment received. Here is what happens next.</h1>
+  <p class="lead">This page does not read your PayPal receipt, so one step needs you: send me the receipt or the transaction ID. Everything else is already queued on my side.</p>
+
+  <div class="card">
+    <h2>Step 1 &mdash; one line to me</h2>
+    <ol>
+      <li>Email <a href="mailto:perun.intelligence@gmail.com?subject=Content%20approval%20gate%20order">perun.intelligence@gmail.com</a> with:
+        <ul>
+          <li>your PayPal receipt or transaction ID,</li>
+          <li>which option you bought ($49 pack or $149 installed),</li>
+          <li>for the $149 install: the n8n URL where it should run, and whether posts live in Google Drive, Notion or Airtable.</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>Step 2 &mdash; what you get back</h2>
+    <ol>
+      <li><strong>$49 pack</strong> &mdash; a ZIP with the approval core, the three n8n workflow JSON files, the schema, and the 20-scenario test suite. Emailed within two hours of your message.</li>
+      <li><strong>$149 install</strong> &mdash; a working instance in your n8n, your storage connected, the suite passing on your own data, and a short written handover. Three working days from the moment I have access.</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>If it is wrong for you</h2>
+    <p style="margin:0">Say so within 7 days and I refund through PayPal, no argument and no questionnaire. I would rather return the money than have you keep something you cannot use.</p>
+  </div>
+
+  <p class="lead ok" style="margin-top:18px">You can keep clicking the <a href="./">demo</a> in the meantime &mdash; the approval logic is the same one you just bought.</p>
+
+  <footer>
+    Content approval gate &mdash; revision-keyed approvals, stale links refused, idempotent taps, a publish gate that says no.
+  </footer>
+</div>
+</body>
+</html>
